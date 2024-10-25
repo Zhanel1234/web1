@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объединение массива</title>
+</head>
+<body>
+    <script>
+        // Пример массива
+        var cars = ['"Audi"', "Volvo", "BMW", "Mercedes"];
+
+        // Используем join для объединения с запятой
+        console.log(cars.join(', '));
+
+        // Используем toString для преобразования в строку
+        console.log(cars.toString());
+
+        // Используем join без параметров
+        console.log(cars.join());
+
+        // Работа с другим массивом
+        var arr = ["a,b,c", "d", "e"];
+
+        // Берем первый элемент и удаляем его из массива
+        var abc = arr.splice(0, 1);
+
+        // Преобразовываем элемент в строку и разделяем его на массив
+        var abcArr = abc[0].split(',');
+
+        // Соединяем два массива
+        var res = abcArr.concat(arr);
+
+        // Выводим результат
+        console.log(res);
+    </script>
+</body>
+</html>

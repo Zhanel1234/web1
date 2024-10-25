@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Получение доменного имени</title>
+</head>
+<body>
+    <script>
+        // Попросим пользователя ввести URL сайта
+        var website = prompt("Введите адрес сайта: ");
+        
+        // Разделяем URL по символу '.'
+        var split = website.split('.');
+        
+        // Проверяем, что доменное имя существует
+        if (split.length > 1) {
+            // Выводим доменное имя (второй элемент массива)
+            console.log("Доменное имя: " + split[1]);
+        } else {
+            console.log("Пожалуйста, введите корректный URL.");
+        }
+    </script>
+</body>
+</html>

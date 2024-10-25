@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подсчет четных и нечетных цифр</title>
+</head>
+<body>
+    <script>
+        // Инициализация переменных для подсчета четных и нечетных цифр
+        var even = 0;
+        var odd = 0;
+
+        // Получение числа от пользователя
+        var user_num = prompt("Введите число:");
+
+        // Преобразуем введенное значение в число
+        user_num = Math.abs(parseInt(user_num)); // Приводим к абсолютному значению, чтобы избежать отрицательных чисел
+
+        // Цикл для обработки каждой цифры
+        while (user_num > 0) {
+            // Проверяем, четная ли последняя цифра
+            if (user_num % 2 === 0) {
+                even += 1; // Увеличиваем счетчик четных
+            } else {
+                odd += 1; // Увеличиваем счетчик нечетных
+            }
+
+            // Убираем последнюю цифру из числа
+            user_num = Math.floor(user_num / 10);
+        }
+
+        // Выводим результаты в консоль
+        console.log("Четных: " + even);
+        console.log("Нечетных: " + odd);
+    </script>
+</body>
+</html>

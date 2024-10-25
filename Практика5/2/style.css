@@ -1,0 +1,7 @@
+.product {
+    width: 180px;
+    padding: 8px;
+    float: left;
+    margin-right: 25px;
+    box-shadow: 0 0 2px black;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="product">
+        <div class="productName">Товар 1</div>
+        <img src="https://static.mk.ru/upload/entities/2022/07/27/19/articles/detailPicture/f3/fc/87/29/3578ae6ca508fa56b874df8253f1b0ae.jpg" alt="">
+        <button>В корзину</button>
+    </div>  
+    <div class="product">
+        <div class="productName">Товар 1</div>
+        <img src="https://static.mk.ru/upload/entities/2022/07/27/19/articles/detailPicture/f3/fc/87/29/3578ae6ca508fa56b874df8253f1b0ae.jpg" alt="">
+        <button>В корзину</button>
+    </div>
+    <div class="product">
+        <div class="productName">Товар 1</div>
+        <img src="https://static.mk.ru/upload/entities/2022/07/27/19/articles/detailPicture/f3/fc/87/29/3578ae6ca508fa56b874df8253f1b0ae.jpg" alt="">
+        <button>В корзину</button>
+    </div>
+    
+    <script>
+        "use strict";
+
+        let products = document.querySelectorAll('.product');
+        products.forEach(function(product) {
+            product.style.backgroundColor = "green";
+        })
+    </script>
+</body>
+
+</html>
